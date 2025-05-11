@@ -3,6 +3,7 @@ pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
     if nums.len() == 0 {
         return res;
     }
+
     let mut left: i32 = 0;
     let mut right: i32 = (nums.len() - 1) as i32;
 
