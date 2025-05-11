@@ -9,7 +9,6 @@ pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
     // first occurence
     while left <= right {
         let mid = left + ((right - left) / 2);
-
         if nums[mid as usize] == target {
             res[0] = mid as i32;
             right = mid - 1;
@@ -25,7 +24,6 @@ pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
     // last occurence
     while left <= right {
         let mid = left + ((right - left) / 2);
-
         if nums[mid as usize] == target {
             res[1] = mid as i32;
             left = mid + 1;
